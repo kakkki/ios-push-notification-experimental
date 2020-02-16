@@ -49,6 +49,7 @@
 		80BE505623EFF7FC0074CFEE /* push-notificationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "push-notificationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80BE505A23EFF7FC0074CFEE /* push_notificationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = push_notificationUITests.swift; sourceTree = "<group>"; };
 		80BE505C23EFF7FC0074CFEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80BE506823F7E7E20074CFEE /* push-notification.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "push-notification.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +100,7 @@
 		80BE503723EFF7F80074CFEE /* push-notification */ = {
 			isa = PBXGroup;
 			children = (
+				80BE506823F7E7E20074CFEE /* push-notification.entitlements */,
 				80BE503823EFF7F80074CFEE /* AppDelegate.swift */,
 				80BE503A23EFF7F80074CFEE /* SceneDelegate.swift */,
 				80BE503C23EFF7F80074CFEE /* ViewController.swift */,
@@ -434,6 +436,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "push-notification/push-notification.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B3G5Q9A859;
 				INFOPLIST_FILE = "push-notification/Info.plist";
@@ -443,6 +447,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.kakkki.push.experiment.push-notification";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -452,6 +457,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "push-notification/push-notification.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B3G5Q9A859;
 				INFOPLIST_FILE = "push-notification/Info.plist";
@@ -461,6 +468,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.kakkki.push.experiment.push-notification";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
